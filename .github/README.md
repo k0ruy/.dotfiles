@@ -10,9 +10,13 @@ Since the original uses a loadshedding file, and where I live there isn't loadsh
 
 For the CPU and GPU stuff, I was able to only get temperature of the two and the load of CPU. You will have to check `/sys/class/hwmon/hwmon*/name` and `/sys/class/hwmon/hwmon*/temp*_label` outputs for all the `hwmon*` and `temp*_label` you have, to see which sensor is referred to. In my case (as you can see in the `~/.config/polybar/cpu.ini` and `~/.config/polybar/gpu.ini` files) `/sys/class/hwmon/hwmon1/temp1_input` is referred to the `Tctl` sensor of my Kraken cooler. Moreover, in the bottom bar I changed the internet settings, since I dont have Wi-Fi on my desktop I changed to work with wired.
 
+To make the gpu info work (BTW I have a radeon one, so maybe this is not for you) you have to add this line `<yourUsername> ALL=NOPASSWD: /usr/bin/cat` to your `/etc/sudoers.d/myOverrides` (it's probably named in another way), using the command `sudo visudo -f /etc/sudoers.d/myOverrides`. I know this isnt really secure, but is allowing just to run the cat command without password.
+
+Below I put an image of the updated desktop.
+
 
 *Empty desktop with my modified coinfiguration:*
-![image](https://user-images.githubusercontent.com/71659265/235107562-1db76204-56ac-40c6-a5d8-2b45b152c9b7.png)
+![empty](https://user-images.githubusercontent.com/71659265/235173355-8df2e8b3-27da-4d5c-ac6e-f6b0ab8a1044.png)
 
 The configuration files for my Linux desktop.  Supports Arch based distros using Gnome and/or i3. 
 
