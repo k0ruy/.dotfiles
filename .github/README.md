@@ -8,7 +8,7 @@ the most important packages are:
 
 Since the original uses a loadshedding file, and where I live there isn't loadshedding, I opted to include weather using OpenWeatherMap API. If you want to use it you will have to create an account and ask for an API key, then substitute the key inside the `~/.config/polybar/scripts/weather.py` file, making sure to change your city of interest too (change it also in the `update_weather.py` file in the same directory).
 
-For the CPU and GPU stuff, I was able to only get temperature of the two and the load of CPU. You will have to check `/sys/class/hwmon/hwmon*/name` and `/sys/class/hwmon/hwmon*/temp*_label` outputs for all the `hwmon*` and `temp*_label` you have, to see which sensor is referred to. In my case (as you can see in the `~/.config/polybar/cpu.ini` and `~/.config/polybar/gpu.ini` files) `/sys/class/hwmon/hwmon1/temp1_input` is referred to the `Tctl` sensor of my Kraken cooler.
+For the CPU and GPU stuff, I was able to only get temperature of the two and the load of CPU. You will have to check `/sys/class/hwmon/hwmon*/name` and `/sys/class/hwmon/hwmon*/temp*_label` outputs for all the `hwmon*` and `temp*_label` you have, to see which sensor is referred to. In my case (as you can see in the `~/.config/polybar/cpu.ini` and `~/.config/polybar/gpu.ini` files) `/sys/class/hwmon/hwmon1/temp1_input` is referred to the `Tctl` sensor of my Kraken cooler. Moreover, in the bottom bar I changed the internet settings, since I dont have Wi-Fi on my desktop I changed to work with wired.
 
 ![image](https://user-images.githubusercontent.com/81622310/233985068-9a630612-5d32-4cc0-a2e1-978d5a94856a.png)
 
