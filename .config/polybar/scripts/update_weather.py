@@ -3,7 +3,7 @@ import json
 import os
 
 api_key = os.environ.get("OPENWEATHERMAP_API_KEY")
-city = "Lugano"
+city = "YourCity"
 
 command = [ "curl", "--location", "--request", "GET",  
             f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}" ]
