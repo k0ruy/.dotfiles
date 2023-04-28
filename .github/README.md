@@ -60,25 +60,15 @@ Some screenshots showing off the desktop and rice, as well as some custom featur
 
 Wallpapers can be found at [this ImageGoNord repo](https://github.com/linuxdotexe/nordic-wallpapers) (they "norded" some nice wallpapers) and [locally](https://github.com/AlexvZyl/.dotfiles/tree/main/.wallpapers).
 
-*For Reddit:*
-
-![image](https://user-images.githubusercontent.com/81622310/212382904-0502af7d-653a-4834-8663-c449cfbcfb3c.png)
-
-![image](https://user-images.githubusercontent.com/81622310/212382132-597b93e8-04b3-4497-93ce-8264bdc02fc0.png)
-
-![image](https://user-images.githubusercontent.com/81622310/212382290-a923c5be-9d16-4e44-8fc0-090b05865316.png)
 
 *Notifications via [dunst](https://github.com/dunst-project/dunst):*
-![image](https://user-images.githubusercontent.com/81622310/210980911-cb7825d5-1ac2-4db9-b34a-f92887701d1d.png)
+![image](https://user-images.githubusercontent.com/71659265/235106355-a28a93b4-d816-47e2-af53-dc28664d6d8e.png)
 
-*Launcher via [rofi](https://github.com/adi1090x/rofi):*
+*Launcher via [rofi](https://github.com/adi1090x/rofi) (cant screenshot on my setup, this is the original image from AlexvZyl):*
 ![image](https://user-images.githubusercontent.com/81622310/211895894-663f3480-d2d9-4546-8f1b-04217cb2dd75.png)
 
-*Powermenu via [rofi](https://github.com/adi1090x/rofi):*
+*Powermenu via [rofi](https://github.com/adi1090x/rofi) (cant screenshot on my setup, this is the original image from AlexvZyl):*
 ![image](https://user-images.githubusercontent.com/81622310/211911407-050741e9-d7d7-412c-ac12-044f002e8b6f.png)
-
-*Lock screen via [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen):*
-![image](https://user-images.githubusercontent.com/81622310/211187368-5d8e1215-4482-4506-9cd9-6508d980f1f3.png)
 
 </details>
 
