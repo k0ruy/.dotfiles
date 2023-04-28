@@ -1,5 +1,7 @@
 # .dotfiles
 
+THIS FORK IS A MODIFIED VERSION TO WORK FOR MY NEEDS, I ENCOUNETERD PROBLEMS WHILE INSTALLING WITH THE ORIGINAL SCRIPTS, SO I MODIFIED THEM.
+
 ![image](https://user-images.githubusercontent.com/81622310/233985068-9a630612-5d32-4cc0-a2e1-978d5a94856a.png)
 
 The configuration files for my Linux desktop.  Supports Arch based distros using Gnome and/or i3.  Also, currently it assumes you have an Nvidia GPU and Intel CPU.
