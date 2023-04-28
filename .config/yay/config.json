@@ -1,6 +1,6 @@
 {
 	"aururl": "https://aur.archlinux.org",
-	"buildDir": "/home/alex/.cache/yay",
+	"buildDir": "~/.cache/yay",
 	"editor": "nvim",
 	"editorflags": "",
 	"makepkgbin": "makepkg",

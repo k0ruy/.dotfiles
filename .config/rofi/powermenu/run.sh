@@ -19,6 +19,7 @@ logout=''
 yes=''
 no=''
 
+
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \

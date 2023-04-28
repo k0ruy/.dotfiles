@@ -8,7 +8,7 @@ end
 
 -- These have to be run first and in this order.
 -- require 'alex.lazy'
-require 'alex.packer'
+require 'alex.packer-plugins'
 require 'alex.theme'
 
 -- Core.

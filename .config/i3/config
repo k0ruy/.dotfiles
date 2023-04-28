@@ -178,7 +178,7 @@ bindcode $mod+Shift+81 	 move container to workspace  $ws9
 bindcode $mod+Shift+90 	 move container to workspace  $ws10
 
 # resize window (you can also use the mouse for that):
-#mode "resize" {
+mode "resize" {
 # Pressing left will shrink the window's width.
 # Pressing right will grow the window's width.
 # Pressing up will shrink the window's height.
@@ -189,15 +189,15 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 #        bindsym ntilde resize grow width 10 px or 10 ppt
 
 # same bindings, but for the arrow keys
-#	bindsym Left resize shrink width 10 px or 10 ppt
-#        bindsym Down resize grow height 10 px or 10 ppt
-#        bindsym Up resize shrink height 10 px or 10 ppt
-#        bindsym Right resize grow width 10 px or 10 ppt
+	bindsym $mod+Ctrl+Left resize shrink width 10 px or 10 ppt
+        bindsym $mod+Ctrl+Down resize grow height 10 px or 10 ppt
+        bindsym $mod+Ctrl+Up resize shrink height 10 px or 10 ppt
+        bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 
 # back to normal: Enter or Escape
-#	bindsym Return mode "default"
-#        bindsym Escape mode "default"
-#}
+	bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
 
 ######################################
 # keybindings for different actions: #
@@ -214,13 +214,13 @@ bindsym $mod+n exec kitty --class neovim --execute nvim
 
 # Resource viewers.
 bindsym $mod+b exec kitty --config ~/.config/kitty/padding.conf --execute btop 
-bindsym $mod+g exec kitty --config ~/.config/kitty/padding.conf --execute nvtop
+#bindsym $mod+g exec kitty --config ~/.config/kitty/padding.conf --execute nvtop
 
 # RSS Feed.
 bindsym $mod+r exec kitty --config ~/.config/kitty/padding.conf --execute newsboat
 
 # Wifi.
-bindsym $mod+w exec kitty --config ~/.config/kitty/padding.conf --execute ~/.config/i3/scripts/iwctl.sh
+#bindsym $mod+w exec kitty --config ~/.config/kitty/padding.conf --execute ~/.config/i3/scripts/iwctl.sh
 
 # kill focused window
 bindsym $mod+q kill
@@ -462,7 +462,7 @@ bindsym $mod+Tab exec ~/.config/rofi/switcher/run.sh
 # Startup scripts: #
 ####################
 
-exec ~/.scripts/startup/startup.sh
+exec ~/.scripts/startup/startup.sh &
 
 ##############
 # Screenshot #

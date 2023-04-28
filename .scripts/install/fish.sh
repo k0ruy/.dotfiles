@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install the fish shell.
-sudo pamac install fish --no-confirm
+sudo pacman -S fish
 
 # Install and setup tide.
 fish <<'END_FISH'

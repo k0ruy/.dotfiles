@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed - < ~/.scripts/packages/packages.txt
+yay -S --needed $(cat ~/.scripts/packages/packages.txt)
