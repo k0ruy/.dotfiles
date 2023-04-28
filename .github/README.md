@@ -8,9 +8,16 @@ the most important packages are:
 
 Since the original uses a loadshedding file, and where I live there isn't loadshedding, I opted to include weather using OpenWeatherMap API. If you want to use it you will have to create an account and ask for an API key, then substitute the key inside the `~/.config/polybar/scripts/weather.py` file, making sure to change your city of interest too (change it also in the `update_weather.py` file in the same directory).
 
-For the CPU and GPU stuff, I was able to only get temperature of the two and the load of CPU. You will have to check `/sys/class/hwmon/hwmon*/name` and `/sys/class/hwmon/hwmon*/temp*_label` outputs for all the `hwmon*` and `temp*_label` you have, to see which sensor is referred to. In my case (as you can see in the `~/.config/polybar/cpu.ini` and `~/.config/polybar/gpu.ini` files) `/sys/class/hwmon/hwmon1/temp1_input` is referred to the `Tctl` sensor of my Kraken cooler. Moreover, in the bottom bar I changed the internet settings, since I dont have Wi-Fi on my desktop I changed to work with wired.
+In the bottom bar I changed the internet settings, since I dont have Wi-Fi on my desktop I changed to work with wired.
 
-To make the gpu info work (BTW I have a radeon one, so maybe this is not for you) you have to add this line `<yourUsername> ALL=NOPASSWD: /usr/bin/cat` to your `/etc/sudoers.d/myOverrides` (it's probably named in another way), using the command `sudo visudo -f /etc/sudoers.d/myOverrides`. I know this isnt really secure, but is allowing just to run the cat command without password. Source: https://askubuntu.com/questions/504652/adding-nopasswd-in-etc-sudoers-doesnt-work
+To make the gpu info work (BTW I have a radeon one, so maybe this is not for you) you have to add this line `<yourUsername> ALL=NOPASSWD: /usr/bin/cat` to your `/etc/sudoers.d/myOverrides` (it's probably named in another way), using the command `sudo visudo -f /etc/sudoers.d/myOverrides`. I know this isnt really secure, but is allowing just to run the cat command without password.
+
+basically your file inside `/etc/sudoers.d/myOverrides` should contain this:
+```txt
+username ALL=(ALL:ALL) ALL
+username ALL=(ALL:ALL) NOPASSWD: /usr/bin/cat
+```
+*Source: https://askubuntu.com/questions/504652/adding-nopasswd-in-etc-sudoers-doesnt-work*
 
 Below I put an image of the updated desktop.
 
