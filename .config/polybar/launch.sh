@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # Create env variable for polybar CPU temp.
 for i in /sys/class/hwmon/hwmon*/temp*_input; do 
