@@ -1,6 +1,7 @@
 # .dotfiles
+⚠️ &nbsp; PLEASE READ THIS!
 
-THIS FORK IS A MODIFIED VERSION TO WORK FOR MY NEEDS, I ENCOUNETERD PROBLEMS WHILE INSTALLING WITH THE ORIGINAL SCRIPTS, SO I MODIFIED THEM.
+This fork is a modified version to work for my needs, i encountered problems while installing and using the original one, so this is how I modified them.
 
 I suggest to install `yay` (https://www.makeuseof.com/install-and-use-yay-arch-linux/) to install packages that are not available with pacman 
 the most important packages are:
@@ -10,12 +11,14 @@ Since the original uses a loadshedding file, and where I live there isn't loadsh
 
 In the bottom bar I changed the internet settings, since I dont have Wi-Fi on my desktop I changed to work with wired.
 
-To make the gpu info work (BTW I have a radeon one, so maybe this is not for you) you have to add this line `<yourUsername> ALL=NOPASSWD: /usr/bin/cat` to your `/etc/sudoers.d/myOverrides` (it's probably named in another way), using the command `sudo visudo -f /etc/sudoers.d/myOverrides`. I know this isnt really secure, but is allowing just to run the cat command without password.
+To make the gpu info work (BTW I have a radeon one, so maybe this is not for you) you have to add this line `<yourUsername> ALL=NOPASSWD: /usr/bin/cat, /usr/bin/s-tui` to your `/etc/sudoers.d/myOverrides` (it's probably named in another way), using the command `sudo visudo -f /etc/sudoers.d/myOverrides`. I know this isnt really secure, but is allowing just to run the cat command without password.
+
+⚠️ &nbsp; YOU MUST ADD THIS LINES BEFORE STARTING THE POLYBAR `launch.sh`, otherwise your system will try to access sudo commands without password, locking it for some minutes. Ask me how I know... :facepalm:
 
 basically your file inside `/etc/sudoers.d/myOverrides` should contain this:
 ```txt
-username ALL=(ALL:ALL) ALL
-username ALL=(ALL:ALL) NOPASSWD: /usr/bin/cat
+<yourUsername> ALL=(ALL:ALL) ALL
+<yourUsername> ALL=(ALL:ALL) NOPASSWD: /usr/bin/cat, /usr/bin/s-tui
 ```
 *Source: https://askubuntu.com/questions/504652/adding-nopasswd-in-etc-sudoers-doesnt-work*
 
