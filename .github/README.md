@@ -26,7 +26,7 @@ Below I put an image of the updated desktop.
 
 
 *Empty desktop with my modified coinfiguration:*
-![empty](https://user-images.githubusercontent.com/71659265/235173355-8df2e8b3-27da-4d5c-ac6e-f6b0ab8a1044.png)
+![image](https://user-images.githubusercontent.com/71659265/235173355-8df2e8b3-27da-4d5c-ac6e-f6b0ab8a1044.png)
 
 The configuration files for my Linux desktop.  Supports Arch based distros using Gnome and/or i3. 
 
