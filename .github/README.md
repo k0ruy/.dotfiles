@@ -5,7 +5,7 @@ This fork is a modified version to work for my needs, i encountered problems whi
 
 I suggest to install `yay` (https://www.makeuseof.com/install-and-use-yay-arch-linux/) to install packages that are not available with pacman 
 the most important packages are:
-`fish pfetch betterlockscreen btop cronie dunst exa feh git github-cli neovim nvim-packer picom polybar powertop pulseaudio rofi reflector rsync tlp ttf-jetbrains-mono-nerd rustup cargo`
+`fish pfetch betterlockscreen btop cronie dunst exa feh git github-cli neovim nvim-packer picom polybar powertop pulseaudio rofi reflector rsync tlp ttf-jetbrains-mono-nerd rustup cargo `
 
 Since the original uses a loadshedding file, and where I live there isn't loadshedding, I opted to include weather using OpenWeatherMap API. If you want to use it you will have to create an account and ask for an API key, then substitute the key inside the `~/.config/polybar/scripts/weather.py` file, making sure to change your city of interest too (change it also in the `update_weather.py` file in the same directory).
 
@@ -22,11 +22,12 @@ basically your file inside `/etc/sudoers.d/myOverrides` should contain this:
 ```
 *Source: https://askubuntu.com/questions/504652/adding-nopasswd-in-etc-sudoers-doesnt-work*
 
+Polybar Spotify player: https://github.com/mihirlad55/polybar-spotify-module
+
 Below I put an image of the updated desktop.
 
-
 *Empty desktop with my modified coinfiguration:*
-![image](https://user-images.githubusercontent.com/71659265/235173355-8df2e8b3-27da-4d5c-ac6e-f6b0ab8a1044.png)
+![image](https://user-images.githubusercontent.com/71659265/235303147-8f9a0c8b-2bc4-49be-bb65-f1ab2acb5d0f.png)
 
 The configuration files for my Linux desktop.  Supports Arch based distros using Gnome and/or i3. 
 
