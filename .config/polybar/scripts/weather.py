@@ -2,7 +2,7 @@ import requests
 import datetime
 
 # Replace YOUR_API_KEY with your actual API key from OpenWeatherMap
-api_key = "f516d1196fa1a4b71bf35b30ad59c39e"
+api_key = "key"
 city = "Novaggio"
 
 # Set the URL for the OpenWeatherMap API to fetch the current weather in Lugano
