@@ -27,7 +27,6 @@ Polybar Spotify player: https://github.com/mihirlad55/polybar-spotify-module
 Below I put an image of the updated desktop.
 
 *Empty desktop with my modified coinfiguration:*
-![empty](https://user-images.githubusercontent.com/71659265/235355224-45950aab-b45e-414e-b5ba-b71b1cb482d1.png)
 
 The configuration files for my Linux desktop.  Supports Arch based distros using Gnome and/or i3. 
 
