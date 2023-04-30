@@ -2,7 +2,7 @@ import requests
 import datetime
 
 # Replace YOUR_API_KEY with your actual API key from OpenWeatherMap
-api_key = "key"
+api_key = "f516d1196fa1a4b71bf35b30ad59c39e"
 city = "Novaggio"
 
 # Set the URL for the OpenWeatherMap API to fetch the current weather in Lugano
@@ -47,11 +47,11 @@ if response.status_code == 200:
         else:
             icon = icons.get(condition, "")
         sun_time = sunrise_time
-        sun_icon = " "
+        sun_icon = " "
     else:
         icon = icons.get(condition, "")
         sun_time = sunset_time
-        sun_icon = " "
+        sun_icon = " "
         
     # Extract additional weather information from the JSON data
     wind_speed = data["wind"]["speed"]
@@ -74,9 +74,10 @@ if response.status_code == 200:
         wind_direction_cardinal = "󰁎"
     elif 292.5 < wind_direction_degrees <= 337.5:
         wind_direction_cardinal = "󰧄"
-    
+        
+    #  Wind: {wind_direction_cardinal} {wind_speed} m/s
     # Print the weather information
-    print(f"{icon} {temperature:.1f}°C, {condition}, Wind: {wind_direction_cardinal} {wind_speed} m/s, {sun_icon}: {sun_time.strftime('%H:%M')}")
+    print(f"{icon} {temperature:.1f}°C, {condition}, {sun_icon} {sun_time.strftime('%H:%M')}")
 else:
     # Print an error message if the request was unsuccessful
     print("Error fetching weather data")
