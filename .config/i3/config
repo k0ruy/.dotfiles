@@ -467,7 +467,7 @@ bindsym $mod+Tab exec ~/.config/rofi/switcher/run.sh
 # Startup scripts: #
 ####################
 
-exec ~/.scripts/startup/startup.sh &
+exec --no-startup-id ~/.scripts/startup/startup.sh &
 
 ##############
 # Screenshot #
@@ -487,4 +487,4 @@ mouse_warping none
 ##############
 
 # Toggle the inactive opacity for picom.
-bindsym $mod+$shift+r exec ~/.config/picom/scripts/toggle-picom-inactive-opacity.sh && polybar-msg action "#read-mode.exec"
+bindsym $mod+$shift+r exec --no-startup-id ~/.config/picom/scripts/toggle-picom-inactive-opacity.sh && polybar-msg action "#read-mode.exec"

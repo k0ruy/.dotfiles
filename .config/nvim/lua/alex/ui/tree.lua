@@ -3,7 +3,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 local function root_label(path)
-    path = path:gsub('/home/alex', ' ') .. '/'
+    path = path:gsub('/home/christian', ' ') .. '/'
     local path_len = path:len()
     local win_nr = require('nvim-tree.view').get_winnr()
     print(win_nr)

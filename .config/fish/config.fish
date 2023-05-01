@@ -32,7 +32,8 @@ set -x MANWIDTH 999
 
 # Replace ls with exa.
 alias ls='exa --grid --long --header --no-permissions --no-time --across'
-alias la='exa -a --grid --long --header --no-permissions --no-time --across'
+alias ll='exa --grid --long --header --no-permissions --no-time --across'
+alias la='exa --grid --long --header --no-permissions -a --no-time --across'
 
 # Unlock pacman.
 alias unlock='sudo rm /var/lib/pacman/db.lck'

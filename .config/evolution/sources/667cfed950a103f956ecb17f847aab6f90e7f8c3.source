@@ -1,0 +1,17 @@
+[Data Source]
+DisplayName=SUPSI
+Enabled=true
+Parent=local-stub
+
+[Calendar]
+BackendName=local
+Color=rgb(246,97,81)
+Selected=true
+Order=0
+
+[Offline]
+StaySynchronized=true
+
+[Refresh]
+Enabled=true
+IntervalMinutes=30

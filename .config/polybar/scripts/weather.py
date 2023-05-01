@@ -13,11 +13,14 @@ icons = {
     "Clear": " ",
     "Clouds": " ",
     "Rain": " ",
+    "Drizzle": " ",
     "Thunderstorm": " ",
-    "Snow": " ",
+    "Snow": " ",
     "Mist": "󰖑 ",
-    "NightClear": "",
-    "NightClouds": "",
+    "NightClear": " ",
+    "NightClouds": " ",
+    "NightRain": " ",
+    "NightSnow": " ",
 }
 
 # Make a request to the API
@@ -44,6 +47,12 @@ if response.status_code == 200:
             icon = icons["NightClear"]
         elif condition == "Clouds":
             icon = icons["NightClouds"]
+        elif condition == "Rain":
+            icon = icons["NightRain"]
+        elif condition == "Drizzle":
+            icon = icons["NightRain"]
+        elif condition == "Snow":
+            icon = icons["NightSnow"]
         else:
             icon = icons.get(condition, "")
         sun_time = sunrise_time
@@ -77,7 +86,7 @@ if response.status_code == 200:
         
     #  Wind: {wind_direction_cardinal} {wind_speed} m/s
     # Print the weather information
-    print(f"{icon} {temperature:.1f}°C, {condition}, {sun_icon} {sun_time.strftime('%H:%M')}")
+    print(f"{icon} {temperature:.1f}°C, {sun_icon} {sun_time.strftime('%H:%M')}")
 else:
     # Print an error message if the request was unsuccessful
     print("Error fetching weather data")
