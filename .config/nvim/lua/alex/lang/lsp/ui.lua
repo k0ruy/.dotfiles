@@ -1,5 +1,13 @@
 local u = require 'alex.utils'
 
+-- Diagnostics signs colors and character.
+vim.cmd [[
+    sign define DiagnosticSignError text= texthl= linehl= numhl=DiagnosticSignError 
+    sign define DiagnosticSignWarn  text= texthl= linehl= numhl=DiagnosticSignWarn
+    sign define DiagnosticSignInfo  text= texthl= linehl= numhl=DiagnosticSignInfo
+    sign define DiagnosticSignHint  text=󱤅 texthl= linehl= numhl=DiagnosticSignHint
+]]
+
 --------------
 -- LSP Saga --
 --------------
@@ -7,13 +15,13 @@ local u = require 'alex.utils'
 local ui = {
     theme = 'round',
     border = u.border_chars_outer_thin,
-    winblend = 5,
+    winblend = 0,
     title = false,
     diagnostic = '  ',
 }
 
 local lightbulb = {
-    enable = false
+    enable = false,
 }
 
 local definition = {
@@ -27,33 +35,33 @@ local winbar = {
     enable = false,
     folder_level = 1,
     show_file = true,
-    separator = '  '
+    separator = '  ',
 }
 
 local diagnostic = {
     show_code_action = false,
-    on_insert = false
+    on_insert = false,
 }
 
-require 'lspsaga' .setup {
+require('lspsaga').setup {
     lightbulb = lightbulb,
     ui = ui,
     definition = definition,
     symbol_in_winbar = winbar,
-    diagnostic = diagnostic
+    diagnostic = diagnostic,
 }
 
 ---------------------------
 -- Trouble (diagnostics) --
 ---------------------------
 
-require 'trouble'.setup {
+require('trouble').setup {
     padding = true,
     height = 11,
     use_diagnostic_signs = false,
     position = 'bottom',
     signs = u.diagnostic_signs,
-    auto_preview = false
+    auto_preview = false,
 }
 
 -- Make trouble update to the current buffer.

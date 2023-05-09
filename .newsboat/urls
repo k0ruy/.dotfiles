@@ -2,7 +2,6 @@
 https://archlinux.org/feeds/news/ Linux "Arch Linux" FOSS
 
 # Reddit.
-https://www.reddit.com/user/calexza/m/reddit_finance/top/.rss?t=month Finance Reddit
 https://www.reddit.com/r/unixporn/top/.rss?t=month Reddit Linux FOSS
 https://www.reddit.com/r/MechanicalKeyboards/top/.rss?t=month Reddit Keyboards
 
@@ -14,20 +13,15 @@ https://github.com/neovim/neovim/releases.atom GitHub Neovim FOSS
 https://www.ctrlshiftesc.co.za/blogs/announcements.atom Keyboards
 https://www.ctrlshiftesc.co.za/blogs/product-updates.atom Keyboards
 
-# Gaming.
-https://www.teamfortress.com/rss.xml Gaming
-https://www.nomanssky.com/news/rss Gaming
-
-# Guitar.
-https://www.strymon.net/blogs/rss Guitar Strymon
-
 # Youtube.
-https://www.youtube.com/feeds/videos.xml?channel_id=UC_Oa7Ph3v94om5OyxY1nPKg Guitar YouTube # Paul Davids.
-https://www.youtube.com/feeds/videos.xml?channel_id=UCCJ56k8nBeqWLoxNa6DToAQ Guitar YouTube # Rhett Shull.
-https://www.youtube.com/feeds/videos.xml?channel_id=UCL_f53ZEJxp8TtlOkHwMV9Q YouTube Knowledge # Jordan Peterson.
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2D2CMWXMOVWx7giW1n3LIg YouTube Knowledge # Andrew Huberman.
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA YouTube Programming # Fireship.
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA YouTube FOSS # Brodie Robertson.
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2N0bFREZDPYg5H-t7LKgnA Mortebianca
+https://www.youtube.com/feeds/videos.xml?channel_id=UCs8DNFOxYen3kuj87aWKG9g Primitive Skills
+https://www.youtube.com/feeds/videos.xml?channel_id=UCZGkMJEmCR1IqUduqt1uFUw Noriyaro
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw 3Blue1Brown
+https://www.youtube.com/feeds/videos.xml?channel_id=UCworsKCR-Sx6R6-BnIjS2MA Clickspring
+https://www.youtube.com/feeds/videos.xml?channel_id=UCd0xLOw6No5IAsq3Y2-b0eA Clone hand
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkNjBtRkaqyKWq-KwpjCRvQ Jennings Motor Sports
+https://www.youtube.com/feeds/videos.xml?channel_id=UCe0DNp0mKMqrYVaTundyr9w VaatiVidya
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA YouTube Security FOSS # Mental Outlaw.
 
 # Example of grouping tags into a single feed.

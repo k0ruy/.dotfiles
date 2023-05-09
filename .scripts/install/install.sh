@@ -4,10 +4,10 @@
 sudo pacman -Syyu
 
 # +x all sh files in packages
-find ~/.scripts/packages/ -type f -iname "*.sh" -exec chmod +x {} \;
+#find ~/.scripts/packages/ -type f -iname "*.sh" -exec chmod +x {} \;
 
 # Setup packages.
-~/.scripts/packages/setup.sh
+#~/.scripts/packages/setup.sh
 
 # i3 stuff.
 chmod +x ~/.config/picom/scripts/toggle-picom-inactive-opacity.sh
@@ -24,8 +24,10 @@ sudo sh -c "echo 'kernel.sysrq=1' >> /etc/sysctl.d/99-sysctl.conf"
 
 # Add bnaries to sudoers.
 # currently is not really relevant
-#sudo sh -c "echo $USER 'ALL = NOPASSWD: /usr/bin/pacman' >> /etc/sudoers"
-
+christian ALL=(ALL:ALL) ALL
+christian ALL=(ALL:ALL) NOPASSWD: /usr/bin/cat, /usr/bin/pacman, /usr/bin/s-tui
+sudo sh -c "echo 'christian ALL=(ALL:ALL) ALL' > /etc/sudoers"
+sudo sh -c "echo 'christian ALL=(ALL:ALL) NOPASSWD: /usr/bin/cat, /usr/bin/pacman, /usr/bin/s-tui' >> /etc/sudoers"
 
 # Install language servers.
 sudo chmod +x ~/.config/nvim/lua/alex/lang/lsp/install-servers.sh && ~/.config/nvim/lua/alex/lang/lsp/install-servers.sh

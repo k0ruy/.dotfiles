@@ -178,7 +178,7 @@ bindcode $mod+Shift+81 	 move container to workspace  $ws9
 bindcode $mod+Shift+90 	 move container to workspace  $ws10
 
 # resize window (you can also use the mouse for that):
-mode "resize" {
+#mode "resize" {
 # Pressing left will shrink the window's width.
 # Pressing right will grow the window's width.
 # Pressing up will shrink the window's height.
@@ -189,15 +189,15 @@ mode "resize" {
 #        bindsym ntilde resize grow width 10 px or 10 ppt
 
 # same bindings, but for the arrow keys
-	bindsym $mod+Ctrl+Left resize shrink width 10 px or 10 ppt
-        bindsym $mod+Ctrl+Down resize grow height 10 px or 10 ppt
-        bindsym $mod+Ctrl+Up resize shrink height 10 px or 10 ppt
-        bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
+	# bindsym $mod+Ctrl+Left resize shrink width 10 px or 10 ppt
+        # bindsym $mod+Ctrl+Down resize grow height 10 px or 10 ppt
+        # bindsym $mod+Ctrl+Up resize shrink height 10 px or 10 ppt
+        # bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 
 # back to normal: Enter or Escape
-	bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
+	# bindsym Return mode "default"
+        # bindsym Escape mode "default"
+# }
 
 ######################################
 # keybindings for different actions: #
@@ -219,7 +219,7 @@ bindsym $mod+b exec kitty --config ~/.config/kitty/padding.conf --execute btop
 bindsym $mod+g exec google-chrome-stable
 
 # open files
-bindsym $mod+s exec nautilus
+bindsym $mod+d exec nautilus
 
 # RSS Feed.
 bindsym $mod+r exec kitty --config ~/.config/kitty/padding.conf --execute newsboat
@@ -451,7 +451,7 @@ for_window [class=".*"] move position center
 #####################################
 
 # Launcher.
-bindsym $mod+d exec ~/.config/rofi/launcher/run.sh
+bindsym $mod+s exec ~/.config/rofi/launcher/run.sh
 
 # Power menu.
 bindsym $mod+p exec ~/.config/rofi/powermenu/run.sh
@@ -488,3 +488,4 @@ mouse_warping none
 
 # Toggle the inactive opacity for picom.
 bindsym $mod+$shift+r exec --no-startup-id ~/.config/picom/scripts/toggle-picom-inactive-opacity.sh && polybar-msg action "#read-mode.exec"
+

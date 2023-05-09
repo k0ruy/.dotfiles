@@ -1,14 +1,12 @@
 local u = require 'alex.utils'
 
 -- Environment.
-local env_file = os.getenv('HOME') .. '/.private/nvim_env.lua'
-if u.file_exists(env_file) then
-    vim.cmd('luafile ' .. env_file)
-end
+local env_file = os.getenv 'HOME' .. '/.private/nvim_env.lua'
+if u.file_exists(env_file) then vim.cmd('luafile ' .. env_file) end
 
 -- These have to be run first and in this order.
 -- require 'alex.lazy'
-require 'alex.packer-plugins'
+require 'alex.packer'
 require 'alex.theme'
 
 -- Core.

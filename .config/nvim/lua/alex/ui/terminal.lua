@@ -1,53 +1,35 @@
-local p = require 'nordic.colors'
 local u = require 'alex.utils'
 
---------------------------------
--- Terminal emulator settings --
---------------------------------
-
 -- Ensure we are in normal mode when leaving the terminal.
-vim.cmd([[
+vim.cmd [[
     augroup LeavingTerminal
     autocmd! 
     autocmd TermLeave <silent> <Esc>
     augroup end
-]])
+]]
 
 -- Terminal mappings.
-vim.cmd([[
-    au BufEnter * if &buftype == 'terminal' | :startinsert | endif " Make terminal default mode insert mode.
+vim.cmd [[
+    " Make terminal default mode insert mode.
+    au BufEnter * if &buftype == 'terminal' | :startinsert | endif 
+    " Go to normal mode when pressing escape in the terminal.
     tnoremap <silent> <Esc> <C-\><C-n>
-]])
+]]
 
--- Remove the padding in a terminal.
-vim.cmd('autocmd TermOpen * setlocal signcolumn=no')
+-- Setup environment.
+if vim.fn.has 'termguicolors' then vim.cmd 'set termguicolors' end
+vim.env.COLORTERM = 'xterm-256color'
+vim.env.TERM = 'xterm-256color'
+vim.env.TERMINAL = 'xterm-256color'
+vim.env.NVIM_TUI_ENABLE_TRUE_COLOR = 1
 
-----------------
--- Toggleterm --
-----------------
-
-function _Term_width()
-    return vim.o.columns
-end
-
-function _Term_height()
-    return vim.o.lines - 3
-end
-
-require 'toggleterm' .setup {
-    on_open = function(_)
-        vim.cmd("startinsert")
-    end,
+-- Used to toggle fullscreen terminal.
+require('toggleterm').setup {
+    on_open = function(_) vim.cmd 'startinsert' end,
     direction = 'float',
     float_opts = {
-        -- border = 'curved',
-        border = u.border_chars_outer_thin,
-        width = _Term_width,
-        height = _Term_height
+        border = u.border_chars_empty,
+        width = function() return vim.o.columns end,
+        height = function() return vim.o.lines end,
     },
-    highlights = {
-        FloatBorder = {
-            guifg = p.bg_dark
-        }
-    }
 }
