@@ -55,9 +55,7 @@ The theme is based on my Neovim plugin, [nordic.nvim](https://github.com/AlexvZy
 
 # Showcase
 
-Some screenshots showing off the desktop and rice, as well as some custom features I wrote.  Everything has to be *just right*.  I am spending 8+ hours a day on this working, so it might as well be a nice experience.
-
-> ⚠️ &nbsp; Some of these are outdated, I will update them at a later stage.
+Some screenshots showing off the desktop and rice.
 
 <details>
 
